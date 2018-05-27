@@ -2,6 +2,7 @@ version: '3'
 services:
   lanproxy-server:
     build: .
-    ports:
-      - 8091:8090
-
+    network_mode: host
+    volumes:
+      - ./config.properties:/opt/proxy-server-20171116/conf/config.properties
+      - ./lanproxy-data:/root/.lanproxy
