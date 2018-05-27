@@ -1,0 +1,7 @@
+version: '3'
+services:
+  lanproxy-server:
+    build: .
+    ports:
+      - 8091:8090
+
